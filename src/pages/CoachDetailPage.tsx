@@ -1,4 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom";
+import { CoachMotivation } from "../components/CoachMotivation";
 import { PageHero } from "../components/PageHero";
 import { getCoachBySlug, coachWhatsAppMessage } from "../data/coaches";
 import { whatsappLink } from "../data/site";
@@ -10,8 +11,6 @@ export function CoachDetailPage() {
   if (!coach) {
     return <Navigate to="/coaches" replace />;
   }
-
-  const hasGallery = coach.gallery.length > 0;
 
   return (
     <>
@@ -72,31 +71,7 @@ export function CoachDetailPage() {
         </div>
       </section>
 
-      {hasGallery && (
-        <section className="border-t border-volt/10 bg-charcoal-light py-16 md:py-24">
-          <div className="mx-auto max-w-7xl px-4 md:px-6">
-            <div className="reveal mb-10">
-              <p className="text-xs font-bold tracking-[0.3em] text-volt uppercase">Training</p>
-              <h2 className="mt-2 font-display text-4xl text-white md:text-5xl">In Action</h2>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {coach.gallery.map((src, i) => (
-                <div
-                  key={src}
-                  className="reveal overflow-hidden rounded-sm border border-volt/10 transition hover:border-volt/30"
-                >
-                  <img
-                    src={src}
-                    alt={`${coach.name} training ${i + 1}`}
-                    className="aspect-square w-full object-cover transition duration-500 hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      <CoachMotivation motivation={coach.motivation} coachName={coach.name} />
 
       <section className="border-t border-volt/10 bg-charcoal py-12">
         <div className="mx-auto max-w-7xl px-4 text-center md:px-6">
