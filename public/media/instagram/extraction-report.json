@@ -1,0 +1,51 @@
+{
+  "profile": "ace_factor_fitness",
+  "profile_url": "https://www.instagram.com/ace_factor_fitness/?hl=en",
+  "extracted_at": "2026-08-03",
+  "approaches": {
+    "page_scrape": {
+      "success": false,
+      "error": "No og:image or sharedData found — Instagram login wall blocks unauthenticated page scrape",
+      "notes": "Returns empty meta tags without session cookies"
+    },
+    "oembed": {
+      "success": false,
+      "error": "HTTP 403 or limited — oEmbed returns profile thumbnail only, not post media",
+      "notes": "Public oEmbed API does not expose post gallery"
+    },
+    "instaloader": {
+      "success": true,
+      "login_required": false,
+      "profile": {
+        "username": "ace_factor_fitness",
+        "full_name": "GYM",
+        "posts": 68,
+        "followers": 462
+      },
+      "images_downloaded": 6,
+      "videos_downloaded": 14,
+      "download_failures": 1,
+      "failure_reason": "429 Too Many Requests on rapid video download (DVyt6RijGx3)"
+    }
+  },
+  "summary": {
+    "total_images": 6,
+    "total_videos": 14,
+    "total_media": 20,
+    "used_in_site": {
+      "hero_video": "DbDiPIDiz8i.mp4",
+      "gallery_images": 6,
+      "gallery_videos": 2
+    }
+  },
+  "blockers": [
+    "Page scrape blocked by Instagram login wall (expected)",
+    "oEmbed does not provide post media",
+    "Rate limiting (429) on bulk video downloads — use RATE_LIMIT_DELAY=2+ in script"
+  ],
+  "recommendations": [
+    "instaloader works WITHOUT login for public profiles — preferred method",
+    "Re-run scripts/fetch_instagram.py periodically to refresh media",
+    "For full 68-post archive, run with higher delay or authenticated session"
+  ]
+}
