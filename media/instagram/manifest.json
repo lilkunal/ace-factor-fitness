@@ -1,0 +1,31 @@
+{
+  "username": "ace_factor_fitness",
+  "profile_url": "https://www.instagram.com/ace_factor_fitness/?hl=en",
+  "extracted_at": "2026-08-03T18:15:00Z",
+  "image_count": 6,
+  "video_count": 14,
+  "images": [
+    { "file": "DWwN5wmj4X-.jpg", "path": "/media/instagram/DWwN5wmj4X-.jpg", "shortcode": "DWwN5wmj4X-", "type": "image", "caption": "Don't just watch from the sidelines" },
+    { "file": "DVTHxLQD-0_.jpg", "path": "/media/instagram/DVTHxLQD-0_.jpg", "shortcode": "DVTHxLQD-0_", "type": "image", "caption": "Ace Factor Fitness gym interior" },
+    { "file": "DU3cg9WmdOU_1.jpg", "path": "/media/instagram/DU3cg9WmdOU_1.jpg", "shortcode": "DU3cg9WmdOU", "type": "image", "caption": "Gym training area" },
+    { "file": "DU3cg9WmdOU_2.jpg", "path": "/media/instagram/DU3cg9WmdOU_2.jpg", "shortcode": "DU3cg9WmdOU", "type": "image", "caption": "Gym equipment zone" },
+    { "file": "DTsuqofif2E.jpg", "path": "/media/instagram/DTsuqofif2E.jpg", "shortcode": "DTsuqofif2E", "type": "image", "caption": "One year of discipline, dedication" },
+    { "file": "DS8CTSskqsu.jpg", "path": "/media/instagram/DS8CTSskqsu.jpg", "shortcode": "DS8CTSskqsu", "type": "image", "caption": "Ace Factor Fitness" }
+  ],
+  "videos": [
+    { "file": "DbDiPIDiz8i.mp4", "path": "/media/instagram/DbDiPIDiz8i.mp4", "shortcode": "DbDiPIDiz8i", "type": "video", "caption": "Biggest gym in Aligarh" },
+    { "file": "DU8WgXPj2IJ.mp4", "path": "/media/instagram/DU8WgXPj2IJ.mp4", "shortcode": "DU8WgXPj2IJ", "type": "video", "caption": "Ace Factor gym tour" },
+    { "file": "DUsQaRYj6k5.mp4", "path": "/media/instagram/DUsQaRYj6k5.mp4", "shortcode": "DUsQaRYj6k5", "type": "video", "caption": "Not just a gym — it's a lifestyle" },
+    { "file": "DaAFqjgm-0m.mp4", "path": "/media/instagram/DaAFqjgm-0m.mp4", "shortcode": "DaAFqjgm-0m", "type": "video", "caption": "You don't have to be perfect" },
+    { "file": "DZ9__C3ivFe.mp4", "path": "/media/instagram/DZ9__C3ivFe.mp4", "shortcode": "DZ9__C3ivFe", "type": "video", "caption": "Not every workout feels easy" },
+    { "file": "DbiSVxnPJA7.mp4", "path": "/media/instagram/DbiSVxnPJA7.mp4", "shortcode": "DbiSVxnPJA7", "type": "video", "caption": "Instagram fitness" },
+    { "file": "DbXbOGVP0u5.mp4", "path": "/media/instagram/DbXbOGVP0u5.mp4", "shortcode": "DbXbOGVP0u5", "type": "video", "caption": "Visit Ace Factor gym" },
+    { "file": "DavFTXQJIbZ.mp4", "path": "/media/instagram/DavFTXQJIbZ.mp4", "shortcode": "DavFTXQJIbZ", "type": "video", "caption": "Biggest gym in Aligarh" },
+    { "file": "DaRoxmpvO2C.mp4", "path": "/media/instagram/DaRoxmpvO2C.mp4", "shortcode": "DaRoxmpvO2C", "type": "video", "caption": "This Gym Will Make You Fall in Love" },
+    { "file": "DWrgseaD3jv.mp4", "path": "/media/instagram/DWrgseaD3jv.mp4", "shortcode": "DWrgseaD3jv", "type": "video", "caption": "Gym motivation" },
+    { "file": "DU6BIiWD11t.mp4", "path": "/media/instagram/DU6BIiWD11t.mp4", "shortcode": "DU6BIiWD11t", "type": "video", "caption": "Training at Ace Factor" },
+    { "file": "DUz8HvED95r.mp4", "path": "/media/instagram/DUz8HvED95r.mp4", "shortcode": "DUz8HvED95r", "type": "video", "caption": "Defined by discipline" },
+    { "file": "DUFT48cj2nG.mp4", "path": "/media/instagram/DUFT48cj2nG.mp4", "shortcode": "DUFT48cj2nG", "type": "video", "caption": "Instagood fitness" },
+    { "file": "DS-qHQlksQf.mp4", "path": "/media/instagram/DS-qHQlksQf.mp4", "shortcode": "DS-qHQlksQf", "type": "video", "caption": "Ace Factor workout" }
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a66b"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
+  <polygon points="60,4 110,32 110,88 60,116 10,88 10,32" fill="#0a0a0a" stroke="url(#wood)" stroke-width="3"/>
+  <polygon points="60,18 94,38 94,82 60,102 26,82 26,38" fill="#7c3aed" opacity="0.15"/>
+  <text x="60" y="78" text-anchor="middle" font-family="Bebas Neue, Arial Black, sans-serif" font-size="52" font-weight="700" fill="#ffffff">A</text>
+</svg>

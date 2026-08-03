@@ -1,0 +1,293 @@
+[
+  {
+    "username": "shivam__sharma.07",
+    "slug": "shivam-sharma",
+    "approaches": [
+      {
+        "approach": "page_scrape",
+        "success": false,
+        "profile_url": "https://www.instagram.com/shivam__sharma.07/?hl=en",
+        "error": "No og:image (login wall likely)"
+      },
+      {
+        "approach": "oembed",
+        "success": false,
+        "error": "HTTP 400"
+      },
+      {
+        "approach": "instaloader",
+        "success": true,
+        "profile": {
+          "username": "shivam__sharma.07",
+          "full_name": "Shivam sharma",
+          "posts": 104,
+          "followers": 592,
+          "bio": "● UP_INDIA\n● Fitness | Fashion | Life style\n● Prove urslf  that u can win even when nobody is beside u 🕊"
+        }
+      }
+    ],
+    "gallery": [
+      {
+        "file": "gallery-0.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-0.jpg",
+        "caption": "💪\n.\n.\n.\n.\n#fitness #fitnessmotivation #instgram #viralpost"
+      },
+      {
+        "file": "gallery-1.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-1.jpg",
+        "caption": "💪\n.\n.\n.\n.\n#fitness #fitnessmotivation #instgram #viralpost"
+      },
+      {
+        "file": "gallery-2.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-2.jpg",
+        "caption": "💪\n.\n.\n.\n.\n#fitness #fitnessmotivation #instgram #viralpost"
+      },
+      {
+        "file": "gallery-3.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-3.jpg",
+        "caption": "Built, not bought. ⚡\n.\n.\n.\n.\n#fitness #instgram #insta #viralpost"
+      },
+      {
+        "file": "gallery-4.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-4.jpg",
+        "caption": "Set the damn standard\n.\n.\n.\n.\n.\n.\n#fitnesslife #motivation #gymaddict #instgram #viral"
+      },
+      {
+        "file": "gallery-5.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-5.jpg",
+        "caption": "Progress is the real flex.\n.\n.\n.\n.\n.\n.\n.\n#flex #fitness #instgram #instapic #viral"
+      },
+      {
+        "file": "gallery-6.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-6.jpg",
+        "caption": "Progress is the real flex.\n.\n.\n.\n.\n.\n.\n.\n#flex #fitness #instgram #instapic #viral"
+      },
+      {
+        "file": "gallery-7.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-7.jpg",
+        "caption": "Dedication knows no excuses\n.\n.\n.\n.\n.\n.\n.\n#dedication #noexcuses #fitness #instgram #viralpost"
+      },
+      {
+        "file": "gallery-8.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-8.jpg",
+        "caption": "Dedication knows no excuses\n.\n.\n.\n.\n.\n.\n.\n#dedication #noexcuses #fitness #instgram #viralpost"
+      },
+      {
+        "file": "gallery-9.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-9.jpg",
+        "caption": "Hard work pays off in muscle.\n.\n.\n.\n.\n.\n.\n.\n.\n#fitness #hardwork #instgram #instafit #viralpost"
+      },
+      {
+        "file": "gallery-10.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-10.jpg",
+        "caption": "Hard work pays off in muscle.\n.\n.\n.\n.\n.\n.\n.\n.\n#fitness #hardwork #instgram #instafit #viralpost"
+      },
+      {
+        "file": "gallery-11.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-11.jpg",
+        "caption": "Hard work pays off in muscle.\n.\n.\n.\n.\n.\n.\n.\n.\n#fitness #hardwork #instgram #instafit #viralpost"
+      },
+      {
+        "file": "gallery-12.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-12.jpg",
+        "caption": "Discipline 🦍\n.\n.\n.\n.\n.\n.\n#transformation#fitness#instgram #instapost #viral"
+      },
+      {
+        "file": "gallery-13.jpg",
+        "path": "/media/coaches/shivam__sharma.07/gallery-13.jpg",
+        "caption": "Feel the burn , love the results\n.\n.\n.\n.\n.\n.\n.\n#gym #viral #post #fitness #instagram"
+      }
+    ],
+    "profile_pic": "/media/coaches/shivam__sharma.07/profile.jpg",
+    "full_name": "Shivam sharma",
+    "bio": "● UP_INDIA\n● Fitness | Fashion | Life style\n● Prove urslf  that u can win even when nobody is beside u 🕊",
+    "specialty": "Strength & Conditioning",
+    "success": true,
+    "manifest": {
+      "id": "shivam-sharma",
+      "slug": "shivam-sharma",
+      "username": "shivam__sharma.07",
+      "instagram": "https://www.instagram.com/shivam__sharma.07/",
+      "handle": "@shivam__sharma.07",
+      "name": "Shivam sharma",
+      "bio": "● UP_INDIA\n● Fitness | Fashion | Life style\n● Prove urslf  that u can win even when nobody is beside u 🕊",
+      "specialty": "Strength & Conditioning",
+      "image": "/media/coaches/shivam__sharma.07/profile.jpg",
+      "gallery": [
+        "/media/coaches/shivam__sharma.07/gallery-0.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-1.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-2.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-3.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-4.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-5.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-6.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-7.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-8.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-9.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-10.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-11.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-12.jpg",
+        "/media/coaches/shivam__sharma.07/gallery-13.jpg"
+      ],
+      "extracted_at": "2026-08-03T20:21:03Z"
+    }
+  },
+  {
+    "username": "thakur_kapil_singh85",
+    "slug": "kapil-singh",
+    "approaches": [
+      {
+        "approach": "page_scrape",
+        "success": false,
+        "profile_url": "https://www.instagram.com/thakur_kapil_singh85/?hl=en",
+        "error": "No og:image (login wall likely)"
+      },
+      {
+        "approach": "oembed",
+        "success": false,
+        "error": "HTTP 400"
+      },
+      {
+        "approach": "instaloader",
+        "success": true,
+        "profile": {
+          "username": "thakur_kapil_singh85",
+          "full_name": "👑 Kapil Singh 👑",
+          "posts": 370,
+          "followers": 5668,
+          "bio": "😘KIΠG Θf Iηstαgrα\n♔ Θffίcίαl Δccouηt\n👮 fitness coach 💪\n💪X Factor Fitness 🏋️\nAce Fac\n👔Mεηsωεαr\n📷 sexy boy \n😎Sίηglε\n💗Ι Ηαtε LΘvε\n😘FrΘm Ιηdίaॐ"
+        }
+      }
+    ],
+    "gallery": [
+      {
+        "file": "gallery-0.jpg",
+        "path": "/media/coaches/thakur_kapil_singh85/gallery-0.jpg",
+        "caption": "#photography #fashionstyle #photographer #instagram #instagood"
+      },
+      {
+        "file": "gallery-1.jpg",
+        "path": "/media/coaches/thakur_kapil_singh85/gallery-1.jpg",
+        "caption": ""
+      },
+      {
+        "file": "gallery-2.jpg",
+        "path": "/media/coaches/thakur_kapil_singh85/gallery-2.jpg",
+        "caption": "#instatravel #photography #fashion #fashionstyle"
+      },
+      {
+        "file": "gallery-3.jpg",
+        "path": "/media/coaches/thakur_kapil_singh85/gallery-3.jpg",
+        "caption": ""
+      },
+      {
+        "file": "gallery-4.jpg",
+        "path": "/media/coaches/thakur_kapil_singh85/gallery-4.jpg",
+        "caption": ""
+      }
+    ],
+    "profile_pic": "/media/coaches/thakur_kapil_singh85/profile.jpg",
+    "full_name": "👑 Kapil Singh 👑",
+    "bio": "😘KIΠG Θf Iηstαgrα\n♔ Θffίcίαl Δccouηt\n👮 fitness coach 💪\n💪X Factor Fitness 🏋️\nAce Fac\n👔Mεηsωεαr\n📷 sexy boy \n😎Sίηglε\n💗Ι Ηαtε LΘvε\n😘FrΘm Ιηdίaॐ",
+    "specialty": "Bodybuilding & Hypertrophy",
+    "success": true,
+    "manifest": {
+      "id": "kapil-singh",
+      "slug": "kapil-singh",
+      "username": "thakur_kapil_singh85",
+      "instagram": "https://www.instagram.com/thakur_kapil_singh85/",
+      "handle": "@thakur_kapil_singh85",
+      "name": "👑 Kapil Singh 👑",
+      "bio": "😘KIΠG Θf Iηstαgrα\n♔ Θffίcίαl Δccouηt\n👮 fitness coach 💪\n💪X Factor Fitness 🏋️\nAce Fac\n👔Mεηsωεαr\n📷 sexy boy \n😎Sίηglε\n💗Ι Ηαtε LΘvε\n😘FrΘm Ιηdίaॐ",
+      "specialty": "Bodybuilding & Hypertrophy",
+      "image": "/media/coaches/thakur_kapil_singh85/profile.jpg",
+      "gallery": [
+        "/media/coaches/thakur_kapil_singh85/gallery-0.jpg",
+        "/media/coaches/thakur_kapil_singh85/gallery-1.jpg",
+        "/media/coaches/thakur_kapil_singh85/gallery-2.jpg",
+        "/media/coaches/thakur_kapil_singh85/gallery-3.jpg",
+        "/media/coaches/thakur_kapil_singh85/gallery-4.jpg"
+      ],
+      "extracted_at": "2026-08-03T20:21:32Z"
+    }
+  },
+  {
+    "username": "_mr_shrivastava_2.0_",
+    "slug": "mr-shrivastava",
+    "approaches": [
+      {
+        "approach": "page_scrape",
+        "success": false,
+        "profile_url": "https://www.instagram.com/_mr_shrivastava_2.0_/?hl=en",
+        "error": "No og:image (login wall likely)"
+      },
+      {
+        "approach": "oembed",
+        "success": false,
+        "error": "HTTP 400"
+      },
+      {
+        "approach": "instaloader",
+        "success": true,
+        "profile": {
+          "username": "_mr_shrivastava_2.0_",
+          "full_name": "Hrithick Shrivastava",
+          "posts": 210,
+          "followers": 1461,
+          "bio": "Mr. GHAZIABAD 3rd 🥉\nMr.NORTH INDIA.IN TOP 5 \nMr. 2 time ()Aligarh 🥇and man physics 🥇"
+        }
+      }
+    ],
+    "gallery": [
+      {
+        "file": "gallery-0.jpg",
+        "path": "/media/coaches/_mr_shrivastava_2.0_/gallery-0.jpg",
+        "caption": "Family ❤️❤️❤️\n\n#likesforlike #liketime #likesforlike #liketime #following"
+      },
+      {
+        "file": "gallery-1.jpg",
+        "path": "/media/coaches/_mr_shrivastava_2.0_/gallery-1.jpg",
+        "caption": "Family ❤️❤️❤️\n\n#likesforlike #liketime #likesforlike #liketime #following"
+      },
+      {
+        "file": "gallery-2.jpg",
+        "path": "/media/coaches/_mr_shrivastava_2.0_/gallery-2.jpg",
+        "caption": "Family ❤️❤️❤️❤️"
+      },
+      {
+        "file": "gallery-3.jpg",
+        "path": "/media/coaches/_mr_shrivastava_2.0_/gallery-3.jpg",
+        "caption": "Family ❤️❤️❤️❤️"
+      },
+      {
+        "file": "gallery-4.jpg",
+        "path": "/media/coaches/_mr_shrivastava_2.0_/gallery-4.jpg",
+        "caption": "Family ❤️❤️❤️❤️"
+      }
+    ],
+    "profile_pic": "/media/coaches/_mr_shrivastava_2.0_/profile.jpg",
+    "full_name": "Hrithick Shrivastava",
+    "bio": "Mr. GHAZIABAD 3rd 🥉\nMr.NORTH INDIA.IN TOP 5 \nMr. 2 time ()Aligarh 🥇and man physics 🥇",
+    "specialty": "Functional & CrossFit",
+    "success": true,
+    "manifest": {
+      "id": "mr-shrivastava",
+      "slug": "mr-shrivastava",
+      "username": "_mr_shrivastava_2.0_",
+      "instagram": "https://www.instagram.com/_mr_shrivastava_2.0_/",
+      "handle": "@_mr_shrivastava_2.0_",
+      "name": "Hrithick Shrivastava",
+      "bio": "Mr. GHAZIABAD 3rd 🥉\nMr.NORTH INDIA.IN TOP 5 \nMr. 2 time ()Aligarh 🥇and man physics 🥇",
+      "specialty": "Functional & CrossFit",
+      "image": "/media/coaches/_mr_shrivastava_2.0_/profile.jpg",
+      "gallery": [
+        "/media/coaches/_mr_shrivastava_2.0_/gallery-0.jpg",
+        "/media/coaches/_mr_shrivastava_2.0_/gallery-1.jpg",
+        "/media/coaches/_mr_shrivastava_2.0_/gallery-2.jpg",
+        "/media/coaches/_mr_shrivastava_2.0_/gallery-3.jpg",
+        "/media/coaches/_mr_shrivastava_2.0_/gallery-4.jpg"
+      ],
+      "extracted_at": "2026-08-03T20:22:09Z"
+    }
+  }
+]
