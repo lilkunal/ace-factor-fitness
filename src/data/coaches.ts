@@ -1,3 +1,5 @@
+import { publicUrl } from "../utils/publicUrl";
+
 export type CoachMotivation = {
   quote: string;
   attribution: string;
@@ -25,7 +27,7 @@ export const COACHES: Coach[] = [
     instagram: "https://www.instagram.com/shivam__sharma.07/",
     handle: "@shivam__sharma.07",
     bio: "UP India · Fitness | Fashion | Lifestyle. Prove yourself that you can win even when nobody is beside you.",
-    image: "/media/coaches/shivam__sharma.07/profile.jpg",
+    image: publicUrl("/media/coaches/shivam__sharma.07/profile.jpg"),
     specialty: "Strength & Conditioning",
     motivation: {
       quote: "Prove yourself that you can win even when nobody is beside you.",
@@ -51,7 +53,7 @@ export const COACHES: Coach[] = [
     instagram: "https://www.instagram.com/thakur_kapil_singh85/",
     handle: "@thakur_kapil_singh85",
     bio: "Fitness coach at Ace Factor Fitness. Bodybuilding specialist — building muscle, discipline, and confidence.",
-    image: "/media/coaches/thakur_kapil_singh85/profile.jpg",
+    image: publicUrl("/media/coaches/thakur_kapil_singh85/profile.jpg"),
     specialty: "Bodybuilding & Hypertrophy",
     motivation: {
       quote: "Building muscle, discipline, and confidence — one rep at a time.",
@@ -77,7 +79,7 @@ export const COACHES: Coach[] = [
     instagram: "https://www.instagram.com/_mr_shrivastava_2.0_/",
     handle: "@_mr_shrivastava_2.0_",
     bio: "Mr. Ghaziabad 3rd · Mr. North India Top 5 · 2× Mr. Aligarh & Men's Physique champion. Competitive bodybuilding coach.",
-    image: "/media/coaches/_mr_shrivastava_2.0_/profile.jpg",
+    image: publicUrl("/media/coaches/_mr_shrivastava_2.0_/profile.jpg"),
     specialty: "Competitive Bodybuilding",
     motivation: {
       quote: "Champions are forged in the gym long before they ever step on stage.",

@@ -1,3 +1,7 @@
+import { publicUrl } from "../utils/publicUrl";
+
+export const LOGO_URL = publicUrl("/assets/logo.svg");
+
 export const BRAND = {
   name: "Ace Factor Fitness",
   tagline: "Build Your Body. Build Your Habits.",
@@ -17,18 +21,18 @@ export const BRAND = {
 };
 
 export const STOCK_IMAGES = {
-  heroAthlete: "/media/stock/hero-athlete.png",
-  aboutGym: "/media/stock/about-gym-interior.png",
-  nutrition: "/media/stock/nutrition-meal.png",
+  heroAthlete: publicUrl("/media/stock/hero-athlete.png"),
+  aboutGym: publicUrl("/media/stock/about-gym-interior.png"),
+  nutrition: publicUrl("/media/stock/nutrition-meal.png"),
 };
 
 export const SECTION_BACKGROUNDS = {
-  bruceLee: "/media/stock/bg/bruce-lee.png",
-  gokuFocus: "/media/stock/bg/goku-focus.png",
-  baki: "/media/stock/bg/baki.png",
-  gokuHero: "/media/stock/bg/goku-hero.png",
-  hanumanBw: "/media/stock/bg/hanuman-bw.png",
-  hanumanEpic: "/media/stock/bg/hanuman-epic.png",
+  bruceLee: publicUrl("/media/stock/bg/bruce-lee.png"),
+  gokuFocus: publicUrl("/media/stock/bg/goku-focus.png"),
+  baki: publicUrl("/media/stock/bg/baki.png"),
+  gokuHero: publicUrl("/media/stock/bg/goku-hero.png"),
+  hanumanBw: publicUrl("/media/stock/bg/hanuman-bw.png"),
+  hanumanEpic: publicUrl("/media/stock/bg/hanuman-epic.png"),
 } as const;
 
 export const MOTIVATION_PUNCHES = [
@@ -65,11 +69,11 @@ export type Activity = {
 
 export const ACTIVITIES: Activity[] = [
   { id: "strength", title: "Strength", subtitle: "Build power", image: STOCK_IMAGES.heroAthlete },
-  { id: "hiit", title: "HIIT", subtitle: "Burn fast", image: "/media/instagram/DWwN5wmj4X-.jpg" },
-  { id: "cardio", title: "Cardio", subtitle: "Push limits", image: "/media/instagram/DS8CTSskqsu.jpg" },
-  { id: "functional", title: "Functional", subtitle: "Move better", image: "/media/instagram/DU3cg9WmdOU_1.jpg" },
+  { id: "hiit", title: "HIIT", subtitle: "Burn fast", image: publicUrl("/media/instagram/DWwN5wmj4X-.jpg") },
+  { id: "cardio", title: "Cardio", subtitle: "Push limits", image: publicUrl("/media/instagram/DS8CTSskqsu.jpg") },
+  { id: "functional", title: "Functional", subtitle: "Move better", image: publicUrl("/media/instagram/DU3cg9WmdOU_1.jpg") },
   { id: "nutrition", title: "Fuel", subtitle: "Eat smart", image: STOCK_IMAGES.nutrition },
-  { id: "recovery", title: "Recover", subtitle: "Come back stronger", image: "/media/instagram/DTsuqofif2E.jpg" },
+  { id: "recovery", title: "Recover", subtitle: "Come back stronger", image: publicUrl("/media/instagram/DTsuqofif2E.jpg") },
 ];
 
 export type WellnessTip = {
@@ -149,7 +153,7 @@ export const STATS = [
   { value: "#1", label: "Aligarh", count: null, countSuffix: "" },
 ];
 
-export const HERO_VIDEO = "/media/instagram/DbDiPIDiz8i.mp4";
+export const HERO_VIDEO = publicUrl("/media/instagram/DbDiPIDiz8i.mp4");
 
 export const HOURS = [
   { day: "Mon–Fri", time: "5 AM – 10 PM" },
@@ -170,14 +174,28 @@ export type GalleryItem = {
 };
 
 export const GALLERY: GalleryItem[] = [
-  { src: "/media/instagram/DWwN5wmj4X-.jpg", alt: "Training floor", type: "image" },
-  { src: "/media/instagram/DTsuqofif2E.jpg", alt: "Discipline", type: "image" },
-  { src: "/media/instagram/DU3cg9WmdOU_1.jpg", alt: "Equipment zone", type: "image" },
-  { src: "/media/instagram/DUsQaRYj6k5.mp4", alt: "Gym tour", type: "video" },
-  { src: "/media/instagram/DS8CTSskqsu.jpg", alt: "Facility", type: "image" },
-  { src: "/media/instagram/DU8WgXPj2IJ.mp4", alt: "Training", type: "video" },
-  { src: "/media/instagram/DU3cg9WmdOU_2.jpg", alt: "Strength area", type: "image" },
+  { src: publicUrl("/media/instagram/DWwN5wmj4X-.jpg"), alt: "Training floor", type: "image" },
+  { src: publicUrl("/media/instagram/DTsuqofif2E.jpg"), alt: "Discipline", type: "image" },
+  { src: publicUrl("/media/instagram/DU3cg9WmdOU_1.jpg"), alt: "Equipment zone", type: "image" },
+  { src: publicUrl("/media/instagram/DUsQaRYj6k5.mp4"), alt: "Gym tour", type: "video" },
+  { src: publicUrl("/media/instagram/DS8CTSskqsu.jpg"), alt: "Facility", type: "image" },
+  { src: publicUrl("/media/instagram/DU8WgXPj2IJ.mp4"), alt: "Training", type: "video" },
+  { src: publicUrl("/media/instagram/DU3cg9WmdOU_2.jpg"), alt: "Strength area", type: "image" },
   { src: STOCK_IMAGES.aboutGym, alt: "Gym interior", type: "image" },
+];
+
+export const PLAN_PERKS = [
+  { icon: "🏋️", title: "100+ Machines", text: "Viva Fitness cardio & full strength floor" },
+  { icon: "⏰", title: "5 AM Opens", text: "Train before the world wakes up" },
+  { icon: "🔐", title: "Locker Access", text: "Secure storage every visit" },
+  { icon: "💪", title: "All Zones", text: "Cardio, strength, functional, free weights" },
+];
+
+export const PLAN_FAQ = [
+  { q: "How do I join?", a: "WhatsApp us or walk in — we'll set you up same day." },
+  { q: "Can I upgrade my plan?", a: "Yes. Switch anytime — we'll adjust the balance." },
+  { q: "Is there a joining fee?", a: "Contact us for current offers and batch discounts." },
+  { q: "What are gym hours?", a: "Mon–Fri 5 AM–10 PM · Sat 6 AM–9 PM · Sun 7 AM–8 PM" },
 ];
 
 export function whatsappLink(message: string): string {
