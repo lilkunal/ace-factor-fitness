@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer, WhatsAppFloat } from "./Contact";
 import { WaterReminder } from "./WaterReminder";
+import { GymNotes } from "./GymNotes";
 import { useRevealOnScroll } from "../hooks/useRevealOnScroll";
 import { useAnimeAnimations } from "../hooks/useAnimeAnimations";
 
@@ -20,6 +21,7 @@ export function Layout() {
       <Footer />
       <WhatsAppFloat />
       <WaterReminder />
+      <GymNotes />
     </div>
   );
 }

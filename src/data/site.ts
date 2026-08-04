@@ -176,9 +176,12 @@ export type GalleryItem = {
 export const GALLERY: GalleryItem[] = [
   { src: publicUrl("/media/instagram/DWwN5wmj4X-.jpg"), alt: "Training floor", type: "image" },
   { src: publicUrl("/media/instagram/DTsuqofif2E.jpg"), alt: "Discipline", type: "image" },
+  { src: publicUrl("/media/stock/blog/dumbbell-rack.png"), alt: "Dumbbell rack — keep weights home", type: "image" },
   { src: publicUrl("/media/instagram/DU3cg9WmdOU_1.jpg"), alt: "Equipment zone", type: "image" },
+  { src: publicUrl("/media/stock/blog/squat-form.png"), alt: "Squat form — core to power", type: "image" },
   { src: publicUrl("/media/instagram/DUsQaRYj6k5.mp4"), alt: "Gym tour", type: "video" },
   { src: publicUrl("/media/instagram/DS8CTSskqsu.jpg"), alt: "Facility", type: "image" },
+  { src: publicUrl("/media/stock/blog/progressive.png"), alt: "Progressive overload — core to max", type: "image" },
   { src: publicUrl("/media/instagram/DU8WgXPj2IJ.mp4"), alt: "Training", type: "video" },
   { src: publicUrl("/media/instagram/DU3cg9WmdOU_2.jpg"), alt: "Strength area", type: "image" },
   { src: STOCK_IMAGES.aboutGym, alt: "Gym interior", type: "image" },

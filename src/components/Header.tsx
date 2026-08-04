@@ -14,6 +14,8 @@ const NAV_LINKS = [
 
   { to: "/coaches", label: "Coaches", end: false },
 
+  { to: "/blog", label: "Blog", end: false },
+
   { to: "/gallery", label: "Gallery", end: false },
 
   { to: "/wellness", label: "Wellness", end: false },

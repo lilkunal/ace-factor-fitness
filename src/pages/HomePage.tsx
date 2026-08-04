@@ -4,6 +4,7 @@ import { HexagonDivider } from "../components/HexagonDivider";
 import { MotivationPulse } from "../components/MotivationPulse";
 import { About } from "../components/About";
 import { Facilities } from "../components/Facilities";
+import { BlogTeaser } from "../components/BlogTeaser";
 import { Testimonials } from "../components/Testimonials";
 import { CallToAction } from "../components/CallToAction";
 
@@ -18,6 +19,7 @@ export function HomePage() {
       <About />
       <HexagonDivider />
       <Facilities />
+      <BlogTeaser />
       <Testimonials />
       <CallToAction />
     </>

@@ -83,6 +83,7 @@ const FOOTER_LINKS = [
   { to: "/", label: "Home" },
   { to: "/plans", label: "Plans" },
   { to: "/coaches", label: "Coaches" },
+  { to: "/blog", label: "Blog" },
   { to: "/gallery", label: "Gallery" },
   { to: "/wellness", label: "Wellness" },
   { to: "/contact", label: "Contact" },

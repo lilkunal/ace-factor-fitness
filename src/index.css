@@ -159,6 +159,26 @@ body {
   animation: water-float 4s ease-in-out infinite;
 }
 
+@keyframes gym-note-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+}
+
+.gym-note-inner {
+  animation: gym-note-float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gym-note-inner {
+    animation: none !important;
+  }
+}
+
 .section-label {
   display: inline-flex;
   max-width: 100%;
