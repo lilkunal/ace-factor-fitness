@@ -161,17 +161,21 @@ body {
 
 .section-label {
   display: inline-flex;
+  max-width: 100%;
   align-items: center;
   gap: 0.5rem;
+  overflow: hidden;
   border-radius: 0.125rem;
   border: 2px solid color-mix(in srgb, var(--color-volt) 40%, transparent);
   background: color-mix(in srgb, var(--color-volt) 8%, transparent);
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   color: var(--color-volt);
   text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn-power {
