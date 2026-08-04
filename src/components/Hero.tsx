@@ -13,8 +13,8 @@ export function Hero() {
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <ShaderBackground />
-      <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-charcoal/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-charcoal/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/70 to-charcoal/25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-charcoal/30" />
 
       <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-7xl flex-col justify-center gap-10 px-4 pb-16 pt-28 md:grid md:grid-cols-2 md:items-center md:gap-12 md:px-6">
         {/* Copy — left aligned, always visible */}
@@ -24,7 +24,7 @@ export function Hero() {
             {BRAND.rating}★ · {BRAND.location}
           </p>
 
-          <h1 className="mt-6 font-display text-6xl leading-[0.9] text-white sm:text-8xl md:text-9xl">
+          <h1 className="mt-6 font-display text-[clamp(3rem,12vw,7rem)] leading-[0.9] text-white">
             <span className="hero-line block">BUILD</span>
             <span className="hero-line block">YOUR</span>
             <span className="hero-line mt-1 block volt-gradient-text">LEGACY</span>

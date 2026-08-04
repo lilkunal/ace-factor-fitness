@@ -83,13 +83,28 @@ export function useAnimeAnimations(pathname: string) {
       const els = document.querySelectorAll(selector);
       if (!els.length) return;
 
+      // Don't hide content permanently — animate only if still below fold
+      const first = els[0] as HTMLElement;
+      const rect = first.getBoundingClientRect();
+      const alreadyVisible = rect.top < window.innerHeight * 0.9;
+
+      if (alreadyVisible) {
+        animate(els, {
+          ...props,
+          duration: 600,
+          ease: EASE,
+          delay: staggerMs > 0 ? stagger(staggerMs) : 0,
+        });
+        return;
+      }
+
       els.forEach((el) => {
         (el as HTMLElement).style.opacity = "0";
       });
 
       let fired = false;
       onScroll({
-        target: els[0]!,
+        target: first,
         enter: "bottom top-=80px",
         leave: "top bottom",
         repeat: false,

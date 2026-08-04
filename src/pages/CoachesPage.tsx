@@ -10,7 +10,7 @@ export function CoachesPage() {
         image={SECTION_BACKGROUNDS.bruceLee}
         title="OUR COACHES"
         subtitle="Expert trainers. Real results."
-        objectPosition="center bottom"
+        fit="contain"
       />
 
       <section className="border-t border-volt/10 bg-charcoal py-16 md:py-24">
