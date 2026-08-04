@@ -1,19 +1,50 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { WATER_REMINDERS } from "../data/site";
+
+/** Soft “pop” using Web Audio — no external file, works offline. */
+function playBubblePop() {
+  try {
+    const Ctx = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    if (!Ctx) return;
+    const ctx = new Ctx();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(220, ctx.currentTime + 0.12);
+    gain.gain.setValueAtTime(0.0001, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.08, ctx.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.18);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.2);
+    window.setTimeout(() => void ctx.close(), 300);
+  } catch {
+    /* autoplay / unsupported — ignore */
+  }
+}
 
 export function WaterReminder() {
   const [visible, setVisible] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
   const [dismissed, setDismissed] = useState(false);
+  const playedRef = useRef(false);
 
   useEffect(() => {
     if (dismissed) return;
 
-    const showTimer = window.setTimeout(() => setVisible(true), 4000);
+    const showTimer = window.setTimeout(() => {
+      setVisible(true);
+      if (!playedRef.current) {
+        playedRef.current = true;
+        playBubblePop();
+      }
+    }, 4000);
 
     const cycleTimer = window.setInterval(() => {
       setMessageIndex((i) => (i + 1) % WATER_REMINDERS.length);
-    }, 12000);
+    }, 14000);
 
     return () => {
       window.clearTimeout(showTimer);
@@ -25,31 +56,24 @@ export function WaterReminder() {
 
   return (
     <aside
-      className="water-reminder fixed bottom-24 right-4 z-50 max-w-xs md:bottom-8 md:right-8"
+      className="water-reminder fixed bottom-24 right-4 z-50 max-w-[240px] md:bottom-10 md:right-8"
       role="status"
       aria-live="polite"
     >
-      <div className="water-reminder-inner rounded-sm border-2 border-volt/40 bg-charcoal-light/95 p-4 shadow-2xl backdrop-blur-md">
-        <div className="flex items-start gap-3">
-          <span className="text-2xl" aria-hidden="true">
+      <div className="water-bubble relative rounded-full border border-volt/25 bg-charcoal/40 px-5 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-md">
+        <button
+          type="button"
+          onClick={() => setDismissed(true)}
+          className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full border border-volt/20 bg-charcoal/60 text-xs text-zinc-400 backdrop-blur-sm transition hover:text-white"
+          aria-label="Dismiss"
+        >
+          ✕
+        </button>
+        <div className="flex items-center gap-3">
+          <span className="text-xl opacity-90" aria-hidden="true">
             💧
           </span>
-          <div className="min-w-0 flex-1">
-            <p className="text-[10px] font-bold tracking-[0.2em] text-volt uppercase">
-              Hydration Advisory
-            </p>
-            <p className="mt-1 text-sm leading-relaxed text-zinc-300">
-              {WATER_REMINDERS[messageIndex]}
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={() => setDismissed(true)}
-            className="shrink-0 text-zinc-500 transition hover:text-white"
-            aria-label="Dismiss hydration reminder"
-          >
-            ✕
-          </button>
+          <p className="text-sm leading-snug text-zinc-200/90">{WATER_REMINDERS[messageIndex]}</p>
         </div>
       </div>
     </aside>
