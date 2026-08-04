@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "build:pages": "cross-env GITHUB_PAGES=true tsc -b && cross-env GITHUB_PAGES=true vite build",
     "preview": "vite preview",
-    "deploy": "npm run build:pages && node scripts/copy-404.mjs && gh-pages -d dist"
+    "deploy": "npm run build:pages && node scripts/copy-404.mjs && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "animejs": "^4.5.0",
