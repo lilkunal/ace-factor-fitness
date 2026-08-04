@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react";
 import { GYM_NOTES } from "../data/blogs";
 
-/** Floating gym-floor notes — etiquette tips that cycle across the site. */
+/** Floating gym-floor notes — left side only so they never collide with WhatsApp / water. */
 export function GymNotes() {
   const [visible, setVisible] = useState(false);
   const [index, setIndex] = useState(0);
   const [dismissed, setDismissed] = useState(false);
-  const [side, setSide] = useState<"left" | "right">("left");
 
   useEffect(() => {
     if (dismissed) return;
 
-    const showTimer = window.setTimeout(() => setVisible(true), 6000);
+    const showTimer = window.setTimeout(() => setVisible(true), 8000);
 
     const cycleTimer = window.setInterval(() => {
       setIndex((i) => (i + 1) % GYM_NOTES.length);
-      setSide((s) => (s === "left" ? "right" : "left"));
-    }, 14000);
+    }, 16000);
 
     return () => {
       window.clearTimeout(showTimer);
@@ -30,15 +28,13 @@ export function GymNotes() {
 
   return (
     <aside
-      className={`gym-note fixed z-40 max-w-[280px] transition-all duration-500 ${
-        side === "left" ? "bottom-28 left-4 md:bottom-10 md:left-8" : "bottom-40 right-4 md:bottom-28 md:right-24"
-      }`}
+      className="gym-note fixed bottom-48 left-3 z-40 max-w-[min(260px,calc(100vw-5.5rem))] md:bottom-10 md:left-8"
       role="status"
       aria-live="polite"
     >
-      <div className="gym-note-inner rounded-sm border-2 border-volt/35 bg-charcoal/95 p-4 shadow-2xl backdrop-blur-md">
+      <div className="gym-note-inner rounded-sm border-2 border-volt/35 bg-charcoal/95 p-3 shadow-2xl backdrop-blur-md sm:p-4">
         <div className="flex items-start gap-3">
-          <span className="text-2xl" aria-hidden="true">
+          <span className="text-xl sm:text-2xl" aria-hidden="true">
             {note.icon}
           </span>
           <div className="min-w-0 flex-1">

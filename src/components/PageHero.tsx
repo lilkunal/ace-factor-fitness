@@ -17,7 +17,7 @@ export function PageHero({
 }: PageHeroProps) {
   return (
     <section
-      className={`page-hero relative flex min-h-[38vh] items-end overflow-hidden sm:min-h-[46vh] ${className}`}
+      className={`page-hero keep-dark relative flex min-h-[38vh] items-end overflow-hidden sm:min-h-[46vh] ${className}`}
       aria-label={title}
     >
       <div className={`absolute inset-0 ${fit === "contain" ? "bg-zinc-200" : "bg-charcoal"}`}>

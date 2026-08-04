@@ -40,11 +40,11 @@ export function WaterReminder() {
         playedRef.current = true;
         playBubblePop();
       }
-    }, 4000);
+    }, 5000);
 
     const cycleTimer = window.setInterval(() => {
       setMessageIndex((i) => (i + 1) % WATER_REMINDERS.length);
-    }, 14000);
+    }, 16000);
 
     return () => {
       window.clearTimeout(showTimer);
@@ -56,24 +56,24 @@ export function WaterReminder() {
 
   return (
     <aside
-      className="water-reminder fixed bottom-24 right-4 z-50 max-w-[240px] md:bottom-10 md:right-8"
+      className="water-reminder fixed bottom-[5.5rem] left-3 z-40 max-w-[min(220px,calc(100vw-5.5rem))] md:bottom-10 md:left-auto md:right-24"
       role="status"
       aria-live="polite"
     >
-      <div className="water-bubble relative rounded-full border border-volt/25 bg-charcoal/40 px-5 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-md">
+      <div className="water-bubble relative rounded-full border border-volt/25 bg-charcoal/55 px-4 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-md sm:px-5 sm:py-4">
         <button
           type="button"
           onClick={() => setDismissed(true)}
-          className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full border border-volt/20 bg-charcoal/60 text-xs text-zinc-400 backdrop-blur-sm transition hover:text-white"
+          className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full border border-volt/20 bg-charcoal/70 text-xs text-zinc-400 backdrop-blur-sm transition hover:text-white"
           aria-label="Dismiss"
         >
           ✕
         </button>
-        <div className="flex items-center gap-3">
-          <span className="text-xl opacity-90" aria-hidden="true">
+        <div className="flex items-center gap-2.5">
+          <span className="text-lg opacity-90 sm:text-xl" aria-hidden="true">
             💧
           </span>
-          <p className="text-sm leading-snug text-zinc-200/90">{WATER_REMINDERS[messageIndex]}</p>
+          <p className="text-xs leading-snug text-zinc-200/90 sm:text-sm">{WATER_REMINDERS[messageIndex]}</p>
         </div>
       </div>
     </aside>

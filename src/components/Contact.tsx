@@ -123,7 +123,7 @@ export function WhatsAppFloat() {
       href={whatsappLink("Hi! I want to join Ace Factor Fitness.")}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-2xl shadow-lg transition hover:scale-105"
+      className="fixed bottom-5 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-xl shadow-lg transition hover:scale-105 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14 sm:text-2xl"
       aria-label="Chat on WhatsApp"
     >
       💬

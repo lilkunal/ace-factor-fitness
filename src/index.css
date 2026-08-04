@@ -11,8 +11,35 @@
   --color-power-dark: #cc3700;
   --color-gold: #ffd700;
   --color-accent: #dc143c;
+  --color-ink: #fafafa;
+  --color-muted: #a1a1aa;
   --font-display: "Anton", "Bebas Neue", Impact, sans-serif;
   --font-body: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+/* Light theme — cool gym concrete (not cream/terracotta defaults) */
+html[data-theme="light"] {
+  color-scheme: light;
+  --color-charcoal: #eef0f3;
+  --color-charcoal-light: #ffffff;
+  --color-charcoal-mist: #e2e5ea;
+  --color-ink: #12141a;
+  --color-muted: #5c6370;
+  --color-volt: #c9b80e;
+  --color-volt-dark: #a8990a;
+  --color-gold: #b8860b;
+}
+
+html[data-theme="light"] .keep-dark {
+  --color-charcoal: #080808;
+  --color-charcoal-light: #111111;
+  --color-charcoal-mist: #1a1a1a;
+  --color-ink: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-volt: #f5e642;
+  --color-volt-dark: #d4c438;
+  --color-gold: #ffd700;
+  color: #fafafa;
 }
 
 * {
@@ -40,7 +67,8 @@ html {
     animation: none !important;
   }
 
-  .water-reminder-inner {
+  .water-reminder-inner,
+  .water-bubble {
     animation: none !important;
   }
 
@@ -54,8 +82,54 @@ body {
   overflow-x: hidden;
   font-family: var(--font-body);
   background: var(--color-charcoal);
-  color: #fafafa;
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
+}
+
+html[data-theme="light"] body {
+  background: var(--color-charcoal);
+  color: var(--color-ink);
+}
+
+/* Flip common dark-UI text utilities outside photo surfaces */
+html[data-theme="light"] :where(.text-white) {
+  color: var(--color-ink);
+}
+
+html[data-theme="light"] :where(.text-zinc-200),
+html[data-theme="light"] :where(.text-zinc-300) {
+  color: #3f4550;
+}
+
+html[data-theme="light"] :where(.text-zinc-400),
+html[data-theme="light"] :where(.text-zinc-500) {
+  color: var(--color-muted);
+}
+
+html[data-theme="light"] .keep-dark :where(.text-white) {
+  color: #fff;
+}
+
+html[data-theme="light"] .keep-dark :where(.text-zinc-200),
+html[data-theme="light"] .keep-dark :where(.text-zinc-300) {
+  color: #d4d4d8;
+}
+
+html[data-theme="light"] .keep-dark :where(.text-zinc-400),
+html[data-theme="light"] .keep-dark :where(.text-zinc-500) {
+  color: #a1a1aa;
+}
+
+html[data-theme="light"] .water-bubble,
+html[data-theme="light"] .gym-note-inner {
+  background: color-mix(in srgb, white 88%, transparent);
+  border-color: color-mix(in srgb, var(--color-volt) 45%, transparent);
+  box-shadow: 0 10px 28px rgba(18, 20, 26, 0.12);
+}
+
+html[data-theme="light"] .water-bubble p,
+html[data-theme="light"] .gym-note-inner p:not(.text-volt) {
+  color: #2a2f38;
 }
 
 ::selection {
@@ -214,9 +288,17 @@ body {
   font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  color: var(--color-charcoal);
+  color: #080808;
   text-transform: uppercase;
   transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+@media (max-width: 640px) {
+  .btn-power,
+  .btn-outline {
+    padding: 0.7rem 1.15rem;
+    font-size: 0.75rem;
+  }
 }
 
 .btn-power:hover {
@@ -338,14 +420,19 @@ body {
 
 .pricing-popular .btn-power {
   background: var(--color-volt);
-  color: var(--color-charcoal);
+  color: #080808;
 }
 
-/* Nav link slide-underline micro-interaction */
+/* Nav link slide-underline — desktop only; never force inline-block on mobile menu */
 .nav-link {
   position: relative;
-  display: inline-block;
   padding-bottom: 0.25rem;
+}
+
+.nav-link-mobile {
+  position: relative;
+  display: flex;
+  width: 100%;
 }
 
 .nav-link::after {
