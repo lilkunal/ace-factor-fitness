@@ -19,18 +19,18 @@ export function Hero() {
       <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-7xl flex-col justify-center gap-10 px-4 pb-16 pt-28 md:grid md:grid-cols-2 md:items-center md:gap-12 md:px-6">
         {/* Copy — left aligned, always visible */}
         <div className="max-w-xl">
-          <p className="hero-label section-label">
-            <span className="h-2 w-2 animate-pulse-glow rounded-full bg-volt" />
-            {BRAND.rating}★ · {BRAND.location}
+          <p className="hero-label section-label max-w-full truncate">
+            <span className="h-2 w-2 shrink-0 animate-pulse-glow rounded-full bg-volt" />
+            {BRAND.rating}★ · Aligarh
           </p>
 
-          <h1 className="mt-6 font-display text-[clamp(3rem,12vw,7rem)] leading-[0.9] text-white">
+          <h1 className="mt-6 break-words font-display text-[clamp(2.75rem,11vw,6.5rem)] leading-[0.92] text-white">
             <span className="hero-line block">BUILD</span>
             <span className="hero-line block">YOUR</span>
             <span className="hero-line mt-1 block volt-gradient-text">LEGACY</span>
           </h1>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/plans" className="hero-cta btn-power">
               View Plans
             </Link>
