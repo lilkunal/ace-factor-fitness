@@ -1,15 +1,15 @@
 import { PageHero } from "../components/PageHero";
 import { NutritionTips } from "../components/NutritionTips";
-import { SECTION_BACKGROUNDS } from "../data/site";
+import { STOCK_IMAGES } from "../data/site";
 
 export function WellnessPage() {
   return (
     <>
       <PageHero
-        image={SECTION_BACKGROUNDS.hanumanBw}
+        image={STOCK_IMAGES.nutrition}
         title="FUEL THE MACHINE"
-        subtitle="Strength isn't built in the gym alone — nutrition, sleep, and discipline complete the picture."
-        objectPosition="center 40%"
+        subtitle="Nutrition, sleep, and discipline — the other half of the grind."
+        objectPosition="center center"
       />
       <NutritionTips showHeader={false} />
     </>

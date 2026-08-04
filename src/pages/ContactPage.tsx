@@ -1,16 +1,16 @@
 import { PageHero } from "../components/PageHero";
 import { Contact } from "../components/Contact";
 import { Location } from "../components/Location";
-import { SECTION_BACKGROUNDS } from "../data/site";
+import { STOCK_IMAGES } from "../data/site";
 
 export function ContactPage() {
   return (
     <>
       <PageHero
-        image={SECTION_BACKGROUNDS.hanumanEpic}
+        image={STOCK_IMAGES.aboutGym}
         title="FIND US"
-        subtitle="Walk in. Train hard. We're on Achal Road — opposite D S College, Aligarh."
-        objectPosition="center center"
+        subtitle="Achal Road, opposite D S College — Aligarh."
+        objectPosition="center 60%"
       />
       <Location showHeader={false} />
       <Contact />
