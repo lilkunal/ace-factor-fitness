@@ -51,4 +51,5 @@ if (!indexHtml.includes("q.p === undefined")) {
 }
 
 writeFileSync("dist/404.html", redirect404Html);
+writeFileSync("dist/.nojekyll", "");
 console.log(`GitHub Pages SPA routing configured for /${REPO}/`);

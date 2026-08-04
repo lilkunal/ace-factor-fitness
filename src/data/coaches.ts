@@ -79,7 +79,7 @@ export const COACHES: Coach[] = [
     instagram: "https://www.instagram.com/_mr_shrivastava_2.0_/",
     handle: "@_mr_shrivastava_2.0_",
     bio: "Mr. Ghaziabad 3rd · Mr. North India Top 5 · 2× Mr. Aligarh & Men's Physique champion. Competitive bodybuilding coach.",
-    image: publicUrl("/media/coaches/_mr_shrivastava_2.0_/profile.jpg"),
+    image: publicUrl("/media/coaches/mr-shrivastava/profile.jpg"),
     specialty: "Competitive Bodybuilding",
     motivation: {
       quote: "Champions are forged in the gym long before they ever step on stage.",
